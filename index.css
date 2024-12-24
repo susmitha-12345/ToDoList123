@@ -1,0 +1,91 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6f4caf; /* Green color */
+}
+
+/* Styling for the input field */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #c2ae14;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the Add button */
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: rgb(209, 23, 150);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Task List Styling */
+ul#task-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+ul#task-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for completed tasks */
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Task remove button */
+li button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: rgb(72, 0, 139);
+}
